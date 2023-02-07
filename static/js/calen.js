@@ -209,7 +209,7 @@ function gotoDate() {
       return;
     }
   }
-  alert("Invalid Date");
+  alert("Data inválida");
 }
 
 //function get active day day name and date and update eventday eventdate
@@ -318,7 +318,7 @@ addEventSubmit.addEventListener("click", () => {
   const eventTimeFrom = addEventFrom.value;
   const eventTimeTo = addEventTo.value;
   if (eventTitle === "" || eventTimeFrom === "" || eventTimeTo === "") {
-    alert("Please fill all the fields");
+    alert("Por favor preencha todos os campos");
     return;
   }
 
@@ -333,7 +333,7 @@ addEventSubmit.addEventListener("click", () => {
     timeToArr[0] > 23 ||
     timeToArr[1] > 59
   ) {
-    alert("Invalid Time Format");
+    alert("Horário inválido");
     return;
   }
 
@@ -356,7 +356,7 @@ addEventSubmit.addEventListener("click", () => {
     }
   });
   if (eventExist) {
-    alert("Event already added");
+    alert("Evento adicionado!");
     return;
   }
   const newEvent = {
@@ -404,7 +404,7 @@ addEventSubmit.addEventListener("click", () => {
 //function to delete event when clicked on event
 eventsContainer.addEventListener("click", (e) => {
   if (e.target.classList.contains("event")) {
-    if (confirm("Are you sure you want to delete this event?")) {
+    if (confirm("Você tem certeza que deseja deletar esse evento?")) {
       const eventTitle = e.target.children[0].children[1].innerHTML;
       eventsArr.forEach((event) => {
         if (

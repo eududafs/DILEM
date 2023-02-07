@@ -5,8 +5,8 @@ import urllib.request,json
 app = Flask(__name__)
 
 @app.route('/')
-def bases():
-    return render_template("base.html")
+def logins():
+    return render_template("login.html")
 
 @app.route('/reserva')
 def reservas():
@@ -18,6 +18,6 @@ def eventoss():
     
 if __name__=="__main__":
     app.run(debug=True)
-    ##
+
     
     
