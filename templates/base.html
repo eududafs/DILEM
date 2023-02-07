@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+ <head>
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>DILEM</title>
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" charset="utf-8"></script>
+   <link rel="shortcut icon" href="globoPNG.png">
+   <link rel="stylesheet" href="\static\BarraStyle.css">
+
+   <script>
+      $.getScript('/static/js/script.js', function() { })
+   </script>
+
+ </head>
+ <body>
+
+   <div class="menu-btn">
+     <i class="fas fa-bars"></i>
+   </div>
+
+
+   <div class="side-bar">
+
+
+
+     <div class="close-btn">
+
+       <i class="fas fa-times"></i>
+     </div>
+     <li>
+        <a>
+            <img src="\static\img\logoPNG.png" class="logo">
+        </a>
+    </li>
+    <div class="navigation">
+      <div class="menu comand">
+        <div class="item active list navbot"><a href="{{url_for('bases')}}">Home</a></div>
+        <div class="item list navbot">
+          <a class="sub-btn" >Reserva de Sala<i class="fas fa-angle-right dropdown"></i></a>
+          <div class="sub-menu">
+            <a href="{{url_for('reservas')}}" class="sub-item">Reservar Sala</a>
+            <a href="#" class="sub-item">Visualizar Reservas</a>
+            <a href="#" class="sub-item">Visualizar Histórico</a>
+            <a href="#" class="sub-item">Cadastrar Sala</a>
+            <a href="#" class="sub-item">Aceitar Reserva</a>
+          </div>
+        </div>
+        <div class="item list navbot">
+          <a class="sub-btn">Manutenção<i class="fas fa-angle-right dropdown"></i></a>
+          <div class="sub-menu">
+            <a href="#" class="sub-item">Pedir Manutenção</a>
+            <a href="#" class="sub-item">Ver Andamento</a>
+            <a href="#" class="sub-item">Visualizar Histórico</a>
+          </div>
+        </div>
+        <div class="item list navbot">
+          <a class="sub-btn">Limpeza<i class="fas fa-angle-right dropdown"></i></a>
+          <div class="sub-menu">
+            <a href="#" class="sub-item">Pedir Limpeza</a>
+            <a href="#" class="sub-item">Ver Andamento</a>
+            <a href="#" class="sub-item">Visualizar Histórico</a>
+          </div>
+        </div>
+
+        <div class="item list navbot">
+          <a class="sub-btn">Eventos<i class="fas fa-angle-right dropdown"></i></a>
+          <div class="sub-menu">
+            <a href="{{url_for('eventoss')}}" class="sub-item">Ver Eventos</a>
+            <a href="#" class="sub-item">Cadastrar Eventos</a>
+          </div>
+        </div>
+        <div class="item list navbot"><a href="#">Meu Perfil</a></div>
+        <div class="item list navbot"><a href="#">Sair</a></div>
+        </div>
+      </div>
+    </div>
+
+   <script src="/static/js/script.js">
+
+    </script>
+{% block conteudo %}
+
+{% endblock conteudo %}
+ </body>
+</html>
