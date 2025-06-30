@@ -17,13 +17,13 @@ Facilitar o processo de agendamento de salas em escolas, evitando conflitos de h
 - HTML5  
 - CSS3  
 - JavaScript  
-- [Framework ou biblioteca, se tiver usado: Bootstrap, Angular, React etc.]
+- Bootstrap
 
 ---
 
 ## ✨ Funcionalidades (Front-end)
 
-- Página de login (em construção ou mockup)
+- Página de login (em construção)
 - Visualização de salas disponíveis
 - Tela de agendamento com seleção de horário/data
 - Interface amigável e responsiva
@@ -39,10 +39,4 @@ Facilitar o processo de agendamento de salas em escolas, evitando conflitos de h
 
 📌 O projeto ainda está em desenvolvimento e pode receber melhorias e novas funcionalidades em breve.
 
----
 
-## 📂 Como Executar
-
-1. Clone o repositório:
-   ```bash
-   git clone https://github.com/seu-usuario/seu-repositorio.git
